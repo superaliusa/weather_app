@@ -1,0 +1,55 @@
+/*.test{
+  width : 150px;
+  height:  150px;
+  background-color: blue;
+}*/
+
+#navbar {
+  background-color: #2ab7ca;
+}
+
+#navi {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-link {
+  color: #fed766;
+  font-style: italic;
+}
+
+body {
+  background-color: #f4f4f8;
+}
+
+img {
+  border-radius: 2px;
+}
+
+.label-default {
+  color: #fed766;
+}
+
+h2 {
+  color: #2AB7CA;
+  font-weight: bolder;
+}
+
+h1 {
+  color: #fed766;
+  font-weight: bold;
+}
+
+}
+
+h3 {
+  color: #f20d0d;
+  font-weight: bold;
+}
+
+}
+
+h4 {
+  color: #fed766;
+  font-weight: bold;
+}

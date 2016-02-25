@@ -1,0 +1,83 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>First Weather App.</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon"
+      type="image/png"
+      href="http://example.com/myicon.png">
+  <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+</head>
+  <body>
+
+  <div class="First Weather App">
+    <div class="left">
+
+
+</div>
+  <div class="right">
+<div class="top">
+    <img id="icon" width="175px" src="" />
+  </div>
+
+  <div class="bottom">
+    <div class="container">
+        <div class="row">
+          <div class="img">
+            <img src="https://pixabay.com/static/uploads/photo/2015/09/30/20/16/atomic-bomb-966008_960_720.jpg" alt="">
+          <h3>Don't get surprises and check your weather by clicking the "Find" button now!</h3>
+          </div>
+          <div class="form-group">
+            <label>Latitude:</label>
+            <input type="text" class='form-control' id='latitude' name='latitude'>
+          </div>
+          <div class="row">
+
+          </div>
+
+          <div class="form-group">
+            <label>Longitude:</label>
+            <input type="text" class="form-control" id="longitude" name="longtiude">
+          </div>
+          <button class="btn btn-default" id='get-weather'>Find</button>
+        </div>
+        <hr>
+
+        <div class="row">
+          <pre id="output">
+    <div class="humidity">
+      <!-- <img src="http://icons.iconarchive.com/icons/custom-icon-design/lovely-weather-2/256/Humidity-icon.png" height="96px" /> -->
+      <span id="humidity"></span>
+      <div class="temprature"><span id="temprature"></span></div>
+      <div class="location"><span id="location"></span></div>
+    </div>
+
+    <div class="wind">
+        <span id="wind"></span> <span id="direction"></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="output">
+  <script id="weatherStuff" type='text/x-handlebars-template'>
+    <img src="images/{{icon}}.png">
+    <h2>{{summary}}</h2>
+    <h2>{{lat}}  Latitude </h2>
+    <h2>{{lon}} Longitude </h2>
+    <h1>{{temp}}&deg </h1>
+  </script>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
